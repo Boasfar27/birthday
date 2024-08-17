@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="nameModal" class="modal">
+      <div class="modal-content">
+        <h2>Whose Birthday is it?</h2>
+        <input type="text" id="nameInput" placeholder="Enter Name" />
+        <button onclick="submitName()">Submit</button>
+      </div>
+    </div>
+
+    <div class="container" id="birthdayContent" style="display: none">
+      <div class="header">
+        <h1 id="birthdayName"></h1>
+        <p>
+          May your day be full of blessings and prayers that are always answered
+          by God, may you always be healthy
+        </p>
+      </div>
+
+      <div class="content">
+        <img
+          src="Tangkapan Layar 2024-08-17 pukul 20.17.03.png"
+          alt="Birthday Image"
+          class="birthday-image"
+        />
+        <button id="playButton" onclick="playMusic()">
+          Play Birthday Song
+        </button>
+        <button id="stopButton" onclick="stopMusic()" style="display: none">
+          Stop Birthday Song
+        </button>
+      </div>
+
+      <div class="message-form">
+        <h2>Leave a Birthday Message</h2>
+        <form id="birthdayForm">
+          <input type="text" placeholder="Your Name" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="messageOutput"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

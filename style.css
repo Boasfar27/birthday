@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8d7da; /* Warna pink soft */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+}
+
+.header {
+    color: #d6336c; /* Pink soft lebih cerah */
+}
+
+.header h1 {
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.header p {
+    margin-bottom: 25px;
+    font-size: 1.3em;
+}
+
+.birthday-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.birthday-image:hover {
+    transform: scale(1.05);
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #d6336c; /* Warna pink soft lebih cerah */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #b82e59;
+    transform: scale(1.05);
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.message-form h2 {
+    color: #d6336c;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Set max-width untuk form */
+    margin: 0 auto; /* Rata tengah form */
+}
+
+form input, form textarea {
+    width: 100%; /* Sesuaikan lebar input dan textarea dengan kontainer */
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Memastikan padding tidak menyebabkan elemen keluar dari form */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #d6336c;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    max-width: 200px; /* Set max-width untuk tombol */
+    padding: 12px 25px;
+    background-color: #d6336c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 auto; /* Rata tengah tombol */
+}
+
+form button:hover {
+    background-color: #b82e59;
+    transform: scale(1.05);
+}
+
+
+#messageOutput {
+    margin-top: 20px;
+    color: #d6336c; /* Pink soft lebih cerah */
+    font-weight: bold;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+    color: #d6336c;
+    margin-bottom: 20px;
+}
+
+.modal input {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.modal input:focus {
+    border-color: #d6336c;
+    outline: none;
+}
+
+.modal button {
+    padding: 12px 25px;
+    background-color: #d6336c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #b82e59;
+    transform: scale(1.05);
+}
+/* Styles yang ada di atas tetap tidak berubah */
